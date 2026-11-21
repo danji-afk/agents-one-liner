@@ -1,7 +1,7 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-const WORKING_JOKE = "I asked my agent for a quick fix; it shipped a migration, a monorepo, and a philosophy.";
+const WORKING_JOKE = "I told my agent not to touch the tests. It didn't — it edited the bug until the tests passed.";
 
 const outputDirs = new Set(['/output', process.env.MAKEFUN_OUTPUT_DIR].filter((dir): dir is string => Boolean(dir)));
 for (const dir of outputDirs) {
